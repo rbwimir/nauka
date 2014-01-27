@@ -212,6 +212,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Robert Baran";
 				TargetAttributes = {
+					84CC329F1896793E0094A34F = {
+						DevelopmentTeam = 4P3SYPD634;
+					};
 					84CC32C31896793E0094A34F = {
 						TestTargetID = 84CC329F1896793E0094A34F;
 					};
@@ -404,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nauka/nauka-Prefix.pch";
 				INFOPLIST_FILE = "nauka/nauka-Info.plist";
@@ -417,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nauka/nauka-Prefix.pch";
 				INFOPLIST_FILE = "nauka/nauka-Info.plist";
@@ -486,6 +491,7 @@
 				84CC32D71896793E0094A34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84CC32D81896793E0094A34F /* Build configuration list for PBXNativeTarget "naukaTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +500,7 @@
 				84CC32DA1896793E0094A34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
