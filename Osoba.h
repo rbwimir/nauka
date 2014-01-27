@@ -19,5 +19,6 @@
 @property int wiek;
 
 - (int) pobierzWiek;
+- (id) initWithName: (NSString *) _imie andAge: (int) _wiek;
 
 @end

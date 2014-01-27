@@ -32,6 +32,10 @@
     osoba.wiek = 12;
     osoba.imie = @"Kamil";
     NSLog(@"Osoba: %@", osoba);
+
+    Osoba *osoba2 = [[Osoba alloc]initWithName:@"Janek" andAge:13];
+    
+    NSLog(@"%@",osoba2);
     
     Student *student = [[Student alloc]init];
     student.wiek = 10;

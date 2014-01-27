@@ -22,5 +22,24 @@
     return [NSString stringWithFormat:@"Osoba ma na imie %@ oraz wiek %d",imie, wiek];
     
 }
+-(id) init
+{
+    if (self = [super init])
+    {
+        wiek = 0;
+        imie = @"";
+    }
+    return self;
+}
 
+- (id) initWithName: (NSString *) _imie andAge: (int) _wiek
+{
+    if (self = [super init])
+    {
+        imie = _imie;
+        wiek = _wiek;
+        
+    }
+    return self;
+}
 @end
