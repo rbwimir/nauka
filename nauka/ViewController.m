@@ -44,29 +44,50 @@
 //    osoba = student;
 //    student = osoba;
     [super viewDidLoad];
+
+    NSMutableDictionary *muDict = [[NSMutableDictionary alloc]init];
     
-    NSMutableSet *setMut = [[NSMutableSet alloc]init];
+    [muDict setObject:@"Kowalski" forKey:@"nazwisko"];
     
+    [muDict setObject:@"Jan" forKey:@"imie"];
     
-    [setMut addObject:@"raz"];
-    [setMut addObject:@"dwa"];
-    [setMut addObject:@"trzy"];
-    [setMut addObject:@"cztery"];
+    [muDict setObject:@"12" forKey:@"wiek"];
     
-   // NSLog(@"%@",setMut);
-    
-    
-    NSMutableSet *setMut2 = [[NSMutableSet alloc]init];
-    
-    [setMut2 addObject:@"raz"];
-    [setMut2 addObject:@"dwa"];
-    [setMut2 addObject:@"piec"];
-    
-    [setMut unionSet:setMut2];
-    
-    NSLog(@"%@",setMut);
+    NSLog(@"%@",muDict);
     
     
+    for ( int i=0; i<[[muDict allKeys]count]; i++)
+    {
+        NSString *klucz = [[muDict allKeys]objectAtIndex:i];
+        NSString *obiekt =[muDict objectForKey:klucz];
+        
+        [muDict objectForKey:[[muDict allKeys]objectAtIndex:i]];
+        
+        NSLog(@"klucz = %@, object = %@",klucz, obiekt);
+    }
+    //NSMutable
+//    NSMutableSet *setMut = [[NSMutableSet alloc]init];
+//    
+//    
+//    [setMut addObject:@"raz"];
+//    [setMut addObject:@"dwa"];
+//    [setMut addObject:@"trzy"];
+//    [setMut addObject:@"cztery"];
+//    
+//   // NSLog(@"%@",setMut);
+//    
+//    
+//    NSMutableSet *setMut2 = [[NSMutableSet alloc]init];
+//    
+//    [setMut2 addObject:@"raz"];
+//    [setMut2 addObject:@"dwa"];
+//    [setMut2 addObject:@"piec"];
+//    
+//    [setMut unionSet:setMut2];
+//    
+//    NSLog(@"%@",setMut);
+    
+    //NSArray
 //    NSMutableArray *mutArray = [[NSMutableArray alloc]init];
 //    
 //    [mutArray addObject:@"raz"];
