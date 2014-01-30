@@ -45,26 +45,63 @@
 //    student = osoba;
     [super viewDidLoad];
 
-    NSMutableDictionary *muDict = [[NSMutableDictionary alloc]init];
+
+    NSDate *dzis = [NSDate date];
+    NSLog(@"%@",dzis);
     
-    [muDict setObject:@"Kowalski" forKey:@"nazwisko"];
+    NSTimeInterval odstep = 60.4;
+    NSDate *data = [NSDate dateWithTimeInterval:odstep sinceDate:dzis];
     
-    [muDict setObject:@"Jan" forKey:@"imie"];
-    
-    [muDict setObject:@"12" forKey:@"wiek"];
-    
-    NSLog(@"%@",muDict);
+    NSLog(@"%@", data);
     
     
-    for ( int i=0; i<[[muDict allKeys]count]; i++)
-    {
-        NSString *klucz = [[muDict allKeys]objectAtIndex:i];
-        NSString *obiekt =[muDict objectForKey:klucz];
-        
-        [muDict objectForKey:[[muDict allKeys]objectAtIndex:i]];
-        
-        NSLog(@"klucz = %@, object = %@",klucz, obiekt);
-    }
+    
+    
+    
+    
+//    NSNumber *num = [[NSNumber alloc]initWithInt:4];
+//    
+//    NSNumber *num2 = [[NSNumber alloc]initWithInt:3.4];
+//    
+//    int a = [num intValue];
+//    
+//    NSMutableArray *ar = [[NSMutableArray alloc]init];
+//    [ar addObject:num];
+//    
+//    
+//    float zmienna1 = 3.5;
+//    int zmienna2 = ( int ) zmienna1;
+//    
+//    zmienna2 = [num2 intValue];
+//    
+//    NSLog(@"wartosc number %i", zmienna2);
+//    
+    
+    
+    
+    
+    
+    
+//    NSMutableDictionary *muDict = [[NSMutableDictionary alloc]init];
+//    
+//    [muDict setObject:@"Kowalski" forKey:@"nazwisko"];
+//    
+//    [muDict setObject:@"Jan" forKey:@"imie"];
+//    
+//    [muDict setObject:@"12" forKey:@"wiek"];
+//    
+//    NSLog(@"%@",muDict);
+//    
+//    
+//    for ( int i=0; i<[[muDict allKeys]count]; i++)
+//    {
+//        NSString *klucz = [[muDict allKeys]objectAtIndex:i];
+//        NSString *obiekt =[muDict objectForKey:klucz];
+//        
+//        [muDict objectForKey:[[muDict allKeys]objectAtIndex:i]];
+//        
+//        NSLog(@"klucz = %@, object = %@",klucz, obiekt);
+//    }
     //NSMutable
 //    NSMutableSet *setMut = [[NSMutableSet alloc]init];
 //    
