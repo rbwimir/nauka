@@ -45,37 +45,61 @@
 //    student = osoba;
     [super viewDidLoad];
     
-    NSMutableArray *mutArray = [[NSMutableArray alloc]init];
+    NSMutableSet *setMut = [[NSMutableSet alloc]init];
     
-    [mutArray addObject:@"raz"];
     
-    [mutArray addObject:@"dwa"];
+    [setMut addObject:@"raz"];
+    [setMut addObject:@"dwa"];
+    [setMut addObject:@"trzy"];
+    [setMut addObject:@"cztery"];
     
-    [mutArray addObject:@"trzy"];
+   // NSLog(@"%@",setMut);
     
-    NSLog(@"%@",mutArray);
     
-    for (int i =0; i<[mutArray count]; i++)
-    {
-        NSLog(@"%@", [mutArray objectAtIndex:i]);
-        id typ = [mutArray objectAtIndex:i];
-        NSString *string = (NSString *)typ;
-        NSLog(@"%@",string);
-    }
+    NSMutableSet *setMut2 = [[NSMutableSet alloc]init];
     
-    for (NSString *s in mutArray)
-    {
-        NSLog(@"%@",s);
-    }
+    [setMut2 addObject:@"raz"];
+    [setMut2 addObject:@"dwa"];
+    [setMut2 addObject:@"piec"];
+    
+    [setMut unionSet:setMut2];
+    
+    NSLog(@"%@",setMut);
+    
+    
+//    NSMutableArray *mutArray = [[NSMutableArray alloc]init];
+//    
+//    [mutArray addObject:@"raz"];
+//    
+//    [mutArray addObject:@"dwa"];
+//    
+//    [mutArray addObject:@"trzy"];
+//    
+//    NSLog(@"%@",mutArray);
+//    
+//    for (int i =0; i<[mutArray count]; i++)
+//    {
+//        NSLog(@"%@", [mutArray objectAtIndex:i]);
+//        id typ = [mutArray objectAtIndex:i];
+//        NSString *string = (NSString *)typ;
+//        NSLog(@"%@",string);
+//    }
+//    
+//    for (NSString *s in mutArray)
+//    {
+//        NSLog(@"%@",s);
+//    }
+//
+//    NSEnumerator *e = [mutArray objectEnumerator];
+//    id object;
+//    
+//    while (object = [e nextObject])
+//    {
+//        
+//        NSLog(@"%@",object);
+//    }
+    
 
-    NSEnumerator *e = [mutArray objectEnumerator];
-    id object;
-    
-    while (object = [e nextObject])
-    {
-        
-        NSLog(@"%@",object);
-    }
 }
 
 - (void)didReceiveMemoryWarning
