@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C972FC189BDE5D009BB233 /* prop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84C972FB189BDE5D009BB233 /* prop.plist */; };
 		84CC32A41896793E0094A34F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CC32A31896793E0094A34F /* Foundation.framework */; };
 		84CC32A61896793E0094A34F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CC32A51896793E0094A34F /* CoreGraphics.framework */; };
 		84CC32A81896793E0094A34F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CC32A71896793E0094A34F /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84C972FB189BDE5D009BB233 /* prop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = prop.plist; sourceTree = "<group>"; };
 		84CC32A01896793E0094A34F /* nauka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nauka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC32A31896793E0094A34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84CC32A51896793E0094A34F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 				84CC32B81896793E0094A34F /* Main_iPad.storyboard */,
 				84CC32BB1896793E0094A34F /* ViewController.h */,
 				84CC32BC1896793E0094A34F /* ViewController.m */,
+				84C972FB189BDE5D009BB233 /* prop.plist */,
 				84CC32DE189683100094A34F /* Student.h */,
 				84CC32DF189683100094A34F /* Student.m */,
 				84CC32DB18967C210094A34F /* Osoba.h */,
@@ -246,6 +249,7 @@
 			files = (
 				84CC32BA1896793E0094A34F /* Main_iPad.storyboard in Resources */,
 				84CC32BF1896793E0094A34F /* Images.xcassets in Resources */,
+				84C972FC189BDE5D009BB233 /* prop.plist in Resources */,
 				84CC32B71896793E0094A34F /* Main_iPhone.storyboard in Resources */,
 				84CC32AE1896793E0094A34F /* InfoPlist.strings in Resources */,
 			);

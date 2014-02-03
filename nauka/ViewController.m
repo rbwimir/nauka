@@ -45,16 +45,25 @@
 //    student = osoba;
     [super viewDidLoad];
 
-
-    NSDate *dzis = [NSDate date];
-    NSLog(@"%@",dzis);
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"prop" ofType:@"plist"];
+    NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:path];
+    NSDictionary *dict = [[NSDictionary alloc]initWithContentsOfFile:path];
     
-    NSTimeInterval odstep = 60.4;
-    NSDate *data = [NSDate dateWithTimeInterval:odstep sinceDate:dzis];
-    
-    NSLog(@"%@", data);
+    NSLog(@"%@  %@",array, dict);
     
     
+    
+    
+//
+//    NSDate *dzis = [NSDate date];
+//    NSLog(@"%@",dzis);
+//    
+//    NSTimeInterval odstep = 60.4;
+//    NSDate *data = [NSDate dateWithTimeInterval:odstep sinceDate:dzis];
+//    
+//    NSLog(@"%@", data);
+//    
+//    
     
     
     
